@@ -4,7 +4,7 @@
 
 This is a repo for class **Elements of Software Engineering** of **Department of Computer Science**,from **University of Texas at Austin**.
 
-|--------------|
+|--------:|:------|
 |project |project 1|
 |Creater | Yu Lu|
 |Create time| 20170909|
