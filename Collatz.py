@@ -33,19 +33,24 @@ def collatz_eval(i, j):
     """
     # <your code>
     def calCollatzCycleNum(n):
+        assert n > 0
         cnt = 1;
         num = n;
+
         while True:
             if num == 1:
                 break
             else:
                 num = num / 2 if num % 2 == 0 else 3 * num + 1
                 cnt += 1
+                assert num > 0
+            
+        assert cnt >= 1
         return cnt
 
     maxCycleLen = max(list(map(calCollatzCycleNum, range(i, j + 1))))
 
-    
+    assert maxCycleLen >= 1
     return maxCycleLen
 
 # -------------

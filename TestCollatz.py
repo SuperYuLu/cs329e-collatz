@@ -33,6 +33,17 @@ class TestCollatz (TestCase):
         self.assertEqual(i,  1)
         self.assertEqual(j, 10)
 
+    #
+    def test_read_failure1(self):
+        s = "1 \n"
+        with self.assertRaises(IndexError):
+            i, j = collatz_read(s)
+
+    #
+    def test_read_failure2(self):
+        s = "1,2\n"
+        with self.assertRaises(ValueError):
+            i, j = collatz_read(s)
     # ----
     # eval
     # ----
@@ -53,6 +64,22 @@ class TestCollatz (TestCase):
         v = collatz_eval(900, 1000)
         self.assertEqual(v, 174)
 
+    #
+    def test_eval_corner(self):
+        v = collatz_eval(1,1)
+        self.assertEqual(v, 1)
+
+    #
+    def test_eval_failure_1(self):
+        with self.assertRaises(TypeError):
+            v = collatz_eval(0.5, 1.5)
+
+    #
+    def test_eval_failure_2(self):
+        with self.assertRaises(AssertionError):
+            v = collatz_eval(-2, -1)
+    
+    
     # -----
     # print
     # -----
@@ -61,6 +88,17 @@ class TestCollatz (TestCase):
         w = StringIO()
         collatz_print(w, 1, 10, 20)
         self.assertEqual(w.getvalue(), "1 10 20\n")
+
+    #
+    def test_print_failure1(self):
+        with self.assertRaises(NameError):
+            collatz_print(w, 1, 10, 20)
+
+    #
+    def test_print_failure2(self):
+        w = 1
+        with self.assertRaises(AttributeError):
+            collatz_print(w, 1, 10, 20)
 
     # -----
     # solve
