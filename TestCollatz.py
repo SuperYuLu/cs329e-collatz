@@ -34,16 +34,20 @@ class TestCollatz (TestCase):
         self.assertEqual(j, 10)
 
     #
-    def test_read_failure1(self):
-        s = "1 \n"
-        with self.assertRaises(IndexError):
-            i, j = collatz_read(s)
+    def test_read_1(self):
+        s = "1 1\n"
+        i, j = collatz_read(s)
+        self.assertEqual(i, 1)
+        self.assertEqual(j, 1)
 
     #
-    def test_read_failure2(self):
-        s = "1,2\n"
-        with self.assertRaises(ValueError):
-            i, j = collatz_read(s)
+    def test_read_2(self):
+        s = "10 1\n"
+        i, j = collatz_read(s)
+        self.assertEqual(i, 10)
+        self.assertEqual(j, 1)
+        
+    #
     # ----
     # eval
     # ----
@@ -65,20 +69,19 @@ class TestCollatz (TestCase):
         self.assertEqual(v, 174)
 
     #
-    def test_eval_corner(self):
+    def test_eval_corner1(self):
         v = collatz_eval(1,1)
         self.assertEqual(v, 1)
 
     #
-    def test_eval_failure_1(self):
-        with self.assertRaises(TypeError):
-            v = collatz_eval(0.5, 1.5)
+    def test_eval_corner2(self):
+        v = collatz_eval(10, 1)
+        self.assertEqual(v, 20)
 
     #
-    def test_eval_failure_2(self):
-        with self.assertRaises(AssertionError):
-            v = collatz_eval(-2, -1)
-    
+    def test_eval_corner3(self):
+        v = collatz_eval(1000, 900)
+        self.assertEqual(v, 174)
     
     # -----
     # print
@@ -88,17 +91,6 @@ class TestCollatz (TestCase):
         w = StringIO()
         collatz_print(w, 1, 10, 20)
         self.assertEqual(w.getvalue(), "1 10 20\n")
-
-    #
-    def test_print_failure1(self):
-        with self.assertRaises(NameError):
-            collatz_print(w, 1, 10, 20)
-
-    #
-    def test_print_failure2(self):
-        w = 1
-        with self.assertRaises(AttributeError):
-            collatz_print(w, 1, 10, 20)
 
     # -----
     # solve
@@ -111,6 +103,8 @@ class TestCollatz (TestCase):
         self.assertEqual(
             #w.getvalue(), "1 10 1\n100 200 1\n201 210 1\n900 1000 1\n")
             w.getvalue(), "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n")
+
+
 # ----
 # main
 # ----
