@@ -80,9 +80,46 @@ class TestCollatz (TestCase):
 
     #
     def test_eval_corner3(self):
-        v = collatz_eval(1000, 900)
-        self.assertEqual(v, 174)
-    
+        v = collatz_eval(1, 5000)
+        self.assertEqual(v, 238)
+
+    #
+    def test_eval_corner4(self):
+        v = collatz_eval(1, 10000)
+        self.assertEqual(v, 262)
+
+    #
+    def test_eval_corner5(self):
+        v = collatz_eval(1, 6000)
+        self.assertEqual(v, 238)
+
+    #
+    def test_eval_corner6(self):
+        v = collatz_eval(4000, 10000)
+        self.assertEqual(v, 262)
+
+    #
+    def test_eval_corner7(self):
+        v = collatz_eval(4000, 5500)
+        self.assertEqual(v, 215)
+    #
+    def test_eval_corner8(self):
+        v = collatz_eval(5001, 25000)
+        self.assertEqual(v, 282)
+    #
+    def test_eval_corner9(self):
+        v = collatz_eval(5001, 22000)
+        self.assertEqual(v, 279)
+
+    #
+    def test_eval_corner10(self):
+        v = collatz_eval(7001, 25000)
+        self.assertEqual(v, 282)
+
+    #
+    def test_eval_corner11(self):
+        v = collatz_eval(7001, 22000)
+        self.assertEqual(v, 279)
     # -----
     # print
     # -----
