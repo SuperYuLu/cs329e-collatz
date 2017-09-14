@@ -48,7 +48,10 @@ def collatz_eval(i, j):
 
     i_idx = (i - 1) // 5000
     j_idx = (j - 1) // 5000
-
+    if j_idx > (len(collatz_max_number) - 1):
+        j_idx = len(collatz_max_number) - 1
+    if i_idx > (len(collatz_max_number) - 1):
+        i_idx = len(collatz_max_number) - 1
     lookup = -1
     startNum = []
     endNum = []

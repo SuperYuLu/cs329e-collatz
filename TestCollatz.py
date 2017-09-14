@@ -120,6 +120,11 @@ class TestCollatz (TestCase):
     def test_eval_corner11(self):
         v = collatz_eval(7001, 22000)
         self.assertEqual(v, 279)
+
+    #
+    def test_eval_corner12(self):
+        v = collatz_eval(1100000, 1100000)
+        self.assertEqual(v, 135)
     # -----
     # print
     # -----
