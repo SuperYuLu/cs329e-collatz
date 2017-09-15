@@ -1,3 +1,9 @@
+commit eae3d086a668256a8f7acfa9988b21c994cb8e16
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Thu Sep 14 19:53:27 2017 -0500
+
+    generate Collatz.log
+
 commit 98630e52d4c9b2cfba3e54b6a95ae3aaafb49aa5
 Author: yulu-utcs <yulu@cs.utexas.edu>
 Date:   Thu Sep 14 19:41:14 2017 -0500
