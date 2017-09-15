@@ -1,3 +1,87 @@
+commit 98630e52d4c9b2cfba3e54b6a95ae3aaafb49aa5
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Thu Sep 14 19:41:14 2017 -0500
+
+    generate TestCollatz.out
+
+commit b2ed15144de78e605f8aaed9b42ff8e30687d074
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Thu Sep 14 19:29:51 2017 -0500
+
+    add detailed comment in Collatz.py
+
+commit 5550949a5985d40d47003c0cc12540666c125b64
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Thu Sep 14 18:59:20 2017 -0500
+
+    rename SphereCollatz.py
+
+commit 72785a239e66ab3d33d3e13d64b5494362f36597
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Thu Sep 14 18:56:14 2017 -0500
+
+    added 180+ lines acceptance tests
+
+commit de3bb0de4b8ac8da7af51a327857a18933d47321
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Thu Sep 14 18:32:47 2017 -0500
+
+    Got SPOJ accepted !
+
+commit 9cd6c36659783db74188fd2e64c6885cc1792bfd
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Mon Sep 11 21:02:56 2017 -0500
+
+    change unit test to cover coner cases
+
+commit 06525969d6618cc14f65e1c0a5873da496230db7
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Sat Sep 9 22:31:26 2017 -0500
+
+    assertion and unit test pass
+
+commit 5e91cf4e6930627045cc8b2d6e86e919620779ba
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Sat Sep 9 16:48:42 2017 -0500
+
+    Unit Test Success !
+
+commit ec3f74f7fd737a0a4b17c7849bad135f81f43c5a
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Sat Sep 9 15:46:49 2017 -0500
+
+    fix talbe issure in README.md, close #12
+
+commit e1329f60021f5568e63fcf9a5a53e7fb6a47f35c
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Sat Sep 9 15:43:40 2017 -0500
+
+    fixed talbe issue in README.md, close #12
+
+commit cbd57121b803b9eed5a2d5ee86cde7db4a8ea411
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Sat Sep 9 15:41:45 2017 -0500
+
+    remove  collatz-tests, close #14
+
+commit 4854d005acf5a236ba75dae5ba029f0ffd0eaa60
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Sat Sep 9 15:37:25 2017 -0500
+
+    add build/pass badge feature, close #15
+
+commit 0104f9c45ec0b78f160a24e1ff8ed2668e72b82f
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Sat Sep 9 15:24:36 2017 -0500
+
+    add .travis.yml file, close #13
+
+commit 7289cb39a1de19f25a2e9cb5674d75e153fd3eb5
+Author: yulu-utcs <yulu@cs.utexas.edu>
+Date:   Sat Sep 9 15:15:45 2017 -0500
+
+    first commit collatz
+
 commit d9e3ed41693723d05b361c080c0ff5684f8a28cd
 Author: yulu-utcs <yulu@cs.utexas.edu>
 Date:   Sat Sep 9 14:52:56 2017 -0500
